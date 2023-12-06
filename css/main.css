@@ -281,7 +281,7 @@ body {
 }
 .hero {
   background: url("../../images/backto.png"), linear-gradient(90deg, rgba(48, 47, 79, 0.94) 24.45%, rgba(47, 47, 79, 0.87) 42.53%, rgba(45, 45, 77, 0.24) 91.42%), url("../../images/bacground-right.png");
-  background-position: calc(50% - 10px) calc(50% - 10px), center, center;
+  background-position: calc(50% - 10px) calc(50% - 10px), center, right;
   background-repeat: no-repeat;
 }
 
