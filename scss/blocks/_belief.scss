@@ -1,0 +1,136 @@
+@use "./mixins" as m;
+
+.belief {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-image: url("../../images/backgroundbelief.png");
+}
+
+
+
+.belief__title-box {
+    max-width: 698px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.belief__title {
+    margin: 0;
+    margin-bottom: 25px;
+    color: #FFF;
+    text-align: center;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+
+.belief__desc-box {
+    display: inline-block;
+    max-width: 430px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.belief__desc {
+    margin: 0;
+    margin-bottom: 70px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    opacity: 0.7;
+}
+
+.belief__list {
+    @include m.unlist;
+    @include m.flexbox(flex, row, center, center);
+}
+
+.belief__item {
+    max-width: 324px;
+    width: 100%;
+    padding: 67px 48px;
+    border-radius: 10px;
+    background-color: #3C3153;
+    text-align: center;
+
+    &:not(:last-child) {
+        margin-right: 64px;
+    }
+
+}
+
+.belief__link {
+    @include m.unlink;
+}
+
+.belief__card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 15px;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: capitalize;
+
+    &::before {
+        display: inline-block;
+        width: 82px;
+        height: 82px;
+        margin-bottom: 24px;
+        background-color: #FFF;
+        @include m.bgimage(url("../../images/gamerespective.png"), 37px 41px, center);
+        border-radius: 50%;
+        content: "";
+    }
+}
+
+.belief__item {
+    &:nth-child(2) .belief__card-title::before {
+        display: inline-block;
+        width: 82px;
+        height: 82px;
+        margin-bottom: 24px;
+        background-color: #FFF;
+        @include m.bgimage(url("../../images/weldocumented.png"), 37px 41px, center);
+        border-radius: 50%;
+        content: "";
+    }
+
+    &:nth-child(3) .belief__card-title::before {
+        display: inline-block;
+        width: 82px;
+        height: 82px;
+        margin-bottom: 24px;
+        background-color: #FFF;
+        @include m.bgimage(url("../../images/sutbleanimations.png"), 37px 41px, center);
+        border-radius: 50%;
+        content: "";
+    }
+}
+
+.belief__card-desc {
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: capitalize;
+    opacity: 0.7;
+}

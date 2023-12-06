@@ -1,0 +1,23 @@
+@mixin unlist {
+    padding: 0;
+    list-style: none;
+}
+
+@mixin unlink {
+    display: inline-block;
+    text-decoration: none;
+}
+
+@mixin flexbox($df, $flexdirection, $just-con, $align-items) {
+    display: $df;
+    flex-direction: $flexdirection;
+    justify-content: $just-con;
+    align-items: $align-items;
+}
+
+@mixin bgimage($url, $bgsize, $bgpositision) {
+    background-image: $url;
+    background-size: $bgsize;
+    background-position: $bgpositision;
+    background-repeat: no-repeat;
+}

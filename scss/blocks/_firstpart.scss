@@ -1,0 +1,216 @@
+@use "./mixins" as m;
+
+.hero { 
+    background: url("../../images/backto.png"), linear-gradient(90deg, rgba(48, 47, 79, 0.94) 24.45%, rgba(47, 47, 79, 0.87) 42.53%, rgba(45, 45, 77, 0.24) 91.42%), url("../../images/bacground-right.png"), ;
+    background-position: calc(50% - 10px) calc(50% - 10px), center, center;
+    background-repeat: no-repeat;
+
+}
+
+.header__wrapper {
+    padding-top: 30px;
+    padding-bottom: 122px;
+    @include m.flexbox(flex, row, space-between, center);
+
+
+}
+
+.site-logo {
+    @include m.unlink;
+}
+
+.site-logo__image {
+    display: block;
+}
+
+.header__list {
+    @include m.unlist;
+    @include m.flexbox(flex, row, space-between, center);
+}
+
+.nav {
+    @include m.flexbox(flex, row, space-between, center);
+}
+
+.header__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header__link {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    text-transform: capitalize;
+    @include m.unlink;
+}
+
+.header__link--sec {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.7;
+    text-transform: capitalize;
+    @include m.unlink;
+}
+
+.signup-wrapper {
+    padding: 14px 30px;
+    border-radius: 5px;
+    background: #4EA4DC;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+    border: 1px solid transparent;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid rgba(78, 164, 220, 0.30);
+        backdrop-filter: blur(2.5px);
+    }
+
+    &:hover>.header__link-signup {
+        color: #4EA4DC;
+    }
+}
+
+.header__link-signup {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    @include m.unlink;
+    transition: color 0.4s ease;
+
+}
+
+.first-section__left-part {
+    max-width: 581px;
+    width: 100%;
+    padding-bottom: 157px;
+}
+
+.first-section__title-first {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #4EA4DC;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.first-section__title {
+    margin: 0;
+    margin-bottom: 25px;
+    color: #FFF;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 125%;
+    text-transform: capitalize;
+}
+
+.first-section__desc {
+    margin: 0;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.60);
+    font-family: "Lato";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+.first-section__desc-underline {
+    margin: 0;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+}
+
+.first-section__link-wrapper {
+    @include m.flexbox(flex, row, start, center);
+
+}
+
+.first-section__link-first-box {
+    display: inline-block;
+    margin-right: 22px;
+    max-width: 155px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #4EA4DC;
+    text-align: center;
+    transition: background-color 0.5s ease;
+    border: 1px solid transparent;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid rgba(78, 164, 220, 0.30);
+        backdrop-filter: blur(2.5px);
+    }
+}
+
+.first-section__link-first {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.first-section__link-first-box:hover>.first-section__link-first {
+    color: #4EA4DC;
+
+}
+
+.first-section__link-second-box {
+    display: inline-block;
+    max-width: 168px;
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(78, 164, 220, 0.30);
+    backdrop-filter: blur(2.5px);
+    text-align: center;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+        background-color: #4EA4DC;
+
+    }
+}
+
+.first-section__link-second {
+    color: #4EA4DC;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    text-transform: capitalize;
+    @include m.unlink;
+    transition: color 0.5s ease;
+}
+
+.first-section__link-second-box:hover>.first-section__link-second {
+    color: #FFF;
+}
