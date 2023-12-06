@@ -509,6 +509,7 @@ body {
 
 .sale {
   padding: 130px 0;
+  background: url("../../images/bgpatten.png");
 }
 
 .sale__wrapper {
