@@ -2,7 +2,7 @@
 
 .sale {
     padding: 130px 0;
-    background: url("../../images/bgpatten.png");
+
 }
 
 .sale__wrapper {
@@ -55,7 +55,11 @@
     border-radius: 20px;
     background: #3C3153;
 
-
+    &:hover {
+        box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
+        -webkit-box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
+        -moz-box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
+    }
 }
 
 .sale__desc-box {
@@ -169,7 +173,10 @@
     border-radius: 10px;
     outline: none;
     border: 1px solid transparent;
-    background-color: #4EA4DC
+    background-color: #4EA4DC;
+    &:hover{
+        color: #fff;
+    }
 }
 
 .sale__buy:active {

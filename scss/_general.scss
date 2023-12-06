@@ -5,7 +5,9 @@
 body {
     margin-top: 0;
     font-family: "Lato";
-    background: #3E3457;
-    // background-attachment: fixed;
+    background: url("../images/backgroundbelief.png"),#3E3457;
+    background-attachment: fixed;
+    background-blend-mode:multiply;
+    text-wrap: wrap;
 
 }

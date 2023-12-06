@@ -7,7 +7,7 @@
     margin: 0 auto;
     background-image: url("../../images/beko.png");
     background-position: bottom -20px right 180px;
-    background-size: 600px 100% ;
+    background-size: 600px 100%;
     background-repeat: no-repeat;
 
 }
@@ -49,6 +49,11 @@
     line-height: 160%;
     text-transform: capitalize;
     @include m.unlink;
+    outline: none;
+
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .header__link--sec {
@@ -182,9 +187,13 @@
     transition: color 0.5s ease;
 }
 
-.first-section__link-first-box:hover>.first-section__link-first {
-    color: #4EA4DC;
+.first-section__link-first-box:hover+.first-section__link-second-box {
+    background-color: #4EA4DC;
+    color: #FFF;
+}
 
+.first-section__link-first-box:hover+.first-section__link-second-box>.first-section__link-second {
+    color: #FFF;
 }
 
 .first-section__link-second-box {

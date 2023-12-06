@@ -2,9 +2,15 @@
 
 .everyone {
     padding: 30px 0;
-    border-radius: 0px 401px 401px 345.5px;
+    border-radius: 0px 200px 0 200px;
     background: linear-gradient(180deg, #3E3457 0%, rgba(62, 52, 87, 0.00) 100%);
     box-shadow: 0px 0px 126px 47px rgba(0, 0, 0, 0.10);
+
+    &:hover {
+        box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
+        -webkit-box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
+        -moz-box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
+    }
 }
 
 
@@ -26,7 +32,8 @@
     max-width: 437px;
     width: 100%;
 }
-.everyone__image{
+
+.everyone__image {
     filter: contrast(110%);
 }
 
