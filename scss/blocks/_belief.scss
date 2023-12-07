@@ -59,7 +59,7 @@
     width: 100%;
     padding: 67px 48px;
     border-radius: 10px;
-    background-color: #3C3153;
+    background-color:#241f5bbf;
     text-align: center;
 
     &:not(:last-child) {
@@ -67,9 +67,9 @@
     }
 
     &:hover {
-        box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
-        -webkit-box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
-        -moz-box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
+        box-shadow: -1px 5px 23px 8px rgba(135, 116, 163, 0.75);
+        -webkit-box-shadow: -1px 5px 23px 8px rgba(80, 63, 106, 0.75);
+        -moz-box-shadow: -1px 5px 23px 8px rgba(90, 87, 94, 0.75);
     }
 
 }

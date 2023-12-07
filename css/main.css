@@ -232,7 +232,7 @@ input[type=checkbox], input[type=radio] {
 body {
   margin-top: 0;
   font-family: "Lato";
-  background: url("../images/backgroundbelief.png"), #3E3457;
+  background: url("../images/backgroundbelief.png"), linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
   background-attachment: fixed;
   background-blend-mode: multiply;
   text-wrap: wrap;
@@ -580,12 +580,12 @@ body {
   padding: 15px;
   padding-top: 0;
   border-radius: 20px;
-  background: #3C3153;
+  background: rgba(36, 31, 91, 0.7490196078);
 }
 .sale__item:hover {
-  box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
-  -webkit-box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
-  -moz-box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
+  box-shadow: -1px 5px 23px 8px rgba(135, 116, 163, 0.75);
+  -webkit-box-shadow: -1px 5px 23px 8px rgba(80, 63, 106, 0.75);
+  -moz-box-shadow: -1px 5px 23px 8px rgba(90, 87, 94, 0.75);
 }
 
 .sale__desc-box {
@@ -710,13 +710,13 @@ body {
 .everyone {
   padding: 30px 0;
   border-radius: 0px 200px 0 200px;
-  background: linear-gradient(180deg, #3E3457 0%, rgba(62, 52, 87, 0) 100%);
+  background: rgba(36, 31, 91, 0.7490196078);
   box-shadow: 0px 0px 126px 47px rgba(0, 0, 0, 0.1);
 }
 .everyone:hover {
-  box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
-  -webkit-box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
-  -moz-box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
+  box-shadow: -1px 5px 23px 8px rgba(135, 116, 163, 0.75);
+  -webkit-box-shadow: -1px 5px 23px 8px rgba(80, 63, 106, 0.75);
+  -moz-box-shadow: -1px 5px 23px 8px rgba(90, 87, 94, 0.75);
 }
 
 .everyone__list {
@@ -859,16 +859,16 @@ body {
   width: 100%;
   padding: 67px 48px;
   border-radius: 10px;
-  background-color: #3C3153;
+  background-color: rgba(36, 31, 91, 0.7490196078);
   text-align: center;
 }
 .belief__item:not(:last-child) {
   margin-right: 64px;
 }
 .belief__item:hover {
-  box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
-  -webkit-box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
-  -moz-box-shadow: -1px 5px 23px 8px rgba(81, 55, 120, 0.75);
+  box-shadow: -1px 5px 23px 8px rgba(135, 116, 163, 0.75);
+  -webkit-box-shadow: -1px 5px 23px 8px rgba(80, 63, 106, 0.75);
+  -moz-box-shadow: -1px 5px 23px 8px rgba(90, 87, 94, 0.75);
 }
 
 .belief__link {
