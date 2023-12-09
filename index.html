@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main.css.map">
     <link rel="shortcut icon" href="./images/icons/site-logo.svg" type="image/x-icon">
@@ -25,10 +26,27 @@
                         <nav class="site-nav nav">
                             <ul class="header__list">
                                 <li class="header__item"><a class="header__link" href="#">home</a></li>
-                                <li class="header__item"><a class="header__link header__link--sec " href="#">Basket 🛍️
-                                    </a></li>
+                                <li class="header__item">
+                                    <!-- <a class="header__link header__link--sec " href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Basket 
+                                    </a> -->
+
+                                    <button type="button"
+                                        class="btn  position-relative header__link header__link--sec"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Basket 🛍️
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            0
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </button>
+
+
+                                </li>
                                 <li class="header__item"><a class="header__link header__link--sec"
-                                        href="#">Favorite</a></li>
+                                        href="admin.html">Admin</a>
+                                </li>
                                 <li class="header__item"><a class="header__link header__link--sec"
                                         href="./login.html">Login</a>
                                 </li>
@@ -91,85 +109,33 @@
                         </p>
                     </div>
                     <ul class="sale__list">
-                        <!-- <template class="product__tempalte"> -->
-                        <li class="sale__item">
-                            <div class="sale__product-image-box">
-                                <img class="sale__image" src="./images/onworld.png" alt="product__image">
-                            </div>
-                            <div class="sale__desc-box">
-                                <p class="sale__product-name">
-                                    Old World
-                                </p>
-                                <p class="sale__product-price">
-                                    $14.39
-                                </p>
-                                <p class="sale__product-desc">
-                                    Mohawk Games Predator Hunt Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Fugit, cum?
-                                </p>
-                            </div>
-                            <button class="sale__buy">Buy 🛍️</button>
-                        </li>
-                        <li class="sale__item">
-                            <div class="sale__product-image-box">
-                                <img class="sale__image" src="./images/zerodawn.png" alt="product__image">
-                            </div>
-                            <div class="sale__desc-box">
-                                <p class="sale__product-name">
-                                    Horizon Zero Dawn™ Complete...
-                                </p>
-                                <p class="sale__product-price">
-                                    $11.99
-                                </p>
-                                <p class="sale__product-desc">
-                                    Mohawk Games Predator Hunt Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Fugit, cum?
-                                </p>
-                            </div>
-                            <button class="sale__buy">Buy 🛍️</button>
-                        </li>
-                        <li class="sale__item">
-                            <div class="sale__product-image-box">
-                                <img class="sale__image" src="./images/predator.png" alt="product__image">
-                            </div>
-                            <div class="sale__desc-box">
-                                <p class="sale__product-name">
-                                    Predator Hunting Grounds
-                                </p>
-                                <p class="sale__product-price">
-                                    $15.59
-                                </p>
-                                <p class="sale__product-desc">
-                                    Mohawk Games Predator Hunt Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Fugit, cum?
-                                </p>
-                            </div>
-                            <button class="sale__buy">Buy 🛍️</button>
-                        </li>
-                        <li class="sale__item">
-                            <div class="sale__product-image-box">
-                                <img class="sale__image" src="./images/discibles.png" alt="product__image">
-                            </div>
-                            <div class="sale__desc-box">
-                                <p class="sale__product-name">
-                                    Disciples: Liberation
-                                </p>
-                                <p class="sale__product-price">
-                                    $14.39
-                                </p>
-                                <p class="sale__product-desc">
-                                    Mohawk Games
-                                </p>
-                            </div>
-                            <button class="sale__buy">Buy 🛍️</button>
-                        </li>
-
-
-                        <!-- </template> -->
+                        <template class="product__tempalte">
+                            <li class="sale__item">
+                                <div class="sale__product-image-box">
+                                    <img class="sale__image" src="./images/onworld.png" alt="product__image">
+                                </div>
+                                <div class="sale__desc-box">
+                                    <p class="sale__product-name">
+                                        Old World
+                                    </p>
+                                    <p class="sale__product-price">
+                                        $14.39
+                                    </p>
+                                    <p class="sale__product-desc">
+                                        Mohawk Games Predator Hunt Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Fugit, cum?
+                                    </p>
+                                </div>
+                                <button class="sale__buy">Buy 🛍️</button>
+                            </li>
+                        </template>
                     </ul>
                 </div>
             </div>
         </section>
+
+
 
         <!--section everyone part started -->
 
@@ -424,7 +390,65 @@
             </div>
         </div>
     </footer>
+
+    <!--  modal -->
+    <!-- <div class="modal-dialog modal-fullscreen-sm-down">
+    </div> -->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Purchased products</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="order__list">
+                        <template class="order__tempalte">
+                            <li class="order__item">
+                                <div class="sale__product-image-box">
+                                    <img class="order__image" src="./images/onworld.png" alt="product__image">
+                                </div>
+                                <div class="order__desc-box">
+                                    <p class="order__name">
+                                        Old World
+                                    </p>
+
+                                    <p class="order__product-desc username">
+                                        Mohawk Games Predator Hunt Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Fugit, cum?
+                                    </p>
+                                </div>
+                                <button class="order__remove">REMOVE 🛍️</button>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  second odal  -->
+    <!-- Button trigger modal -->
+
+    <div class="sec-modal">
+        <h2 class="sec-modal__desc">
+            Site dan foydalanishingiz uchun ro'yhatdan o'ting
+        </h2>
+        <a href="login.html" class="sec-modal__btn">
+            SIGN UP
+        </a>
+    </div>
+
     <!--  site-footer finished -->
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 
